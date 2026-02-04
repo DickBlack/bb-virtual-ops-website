@@ -229,6 +229,77 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+/* Testimonials Section */
+.testimonials {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+    color: #2d2d2d;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: #fafaf8;
+    padding: 2.5rem;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+.testimonial-quote {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-quote p {
+    color: #4d4d4d;
+    line-height: 1.8;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.testimonial-author {
+    border-top: 2px solid #d4c5b3;
+    padding-top: 1.2rem;
+}
+
+.testimonial-author h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: #2d2d2d;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.testimonial-author p {
+    color: #6d6d6d;
+    font-size: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 /* Contact Section */
 .contact {
     padding: 100px 20px;
@@ -308,7 +379,8 @@ footer p {
     }
 
     .services h2,
-    .why-us h2 {
+    .why-us h2,
+    .testimonials h2 {
         font-size: 1.5rem;
     }
 
@@ -325,6 +397,10 @@ footer p {
     }
 
     .why-us-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -347,6 +423,7 @@ footer p {
 
     .services,
     .why-us,
+    .testimonials,
     .contact {
         padding: 60px 20px;
     }
